@@ -9,7 +9,7 @@
 import Foundation
 
 struct PodcastAPIClient {
-    static func fetchPodcast(completion: @escaping (Result <[Podcasts], AppError>) ->()) {
+    static func fetchPodcast(completion: @escaping (Result <[Results], AppError>) ->()) {
         let podcastURL = "https://itunes.apple.com/search?media=podcast&limit=200&term=swift"
         
         guard let url = URL(string: podcastURL) else {
@@ -26,8 +26,8 @@ struct PodcastAPIClient {
                 completion(.failure(.networkClientError(appError)))
             case .success(let data):
                 do {
-                    let podcasts = try JSONDecoder().decode([Podcasts].self, from: data)
-                    completion(.success(podcasts))
+                    let podcasts = try JSONDecoder().decode(Podcasts.self, from: data)
+                    completion(.success(podcasts.results))
                 } catch {
                     completion(.failure(.decodingError(error)))
                 }

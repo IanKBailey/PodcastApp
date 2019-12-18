@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		56D95EE523A9631600F1F67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95EE423A9631600F1F67E /* AppDelegate.swift */; };
 		56D95EE723A9631600F1F67E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95EE623A9631600F1F67E /* SceneDelegate.swift */; };
-		56D95EE923A9631600F1F67E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95EE823A9631600F1F67E /* ViewController.swift */; };
 		56D95EEC23A9631600F1F67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D95EEA23A9631600F1F67E /* Main.storyboard */; };
 		56D95EEE23A9631B00F1F67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D95EED23A9631B00F1F67E /* Assets.xcassets */; };
 		56D95EF123A9631B00F1F67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D95EEF23A9631B00F1F67E /* LaunchScreen.storyboard */; };
@@ -18,6 +17,10 @@
 		56D95F0A23A96A4800F1F67E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F0923A96A4800F1F67E /* AppError.swift */; };
 		56D95F0D23A96D0400F1F67E /* Podcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F0C23A96D0400F1F67E /* Podcasts.swift */; };
 		56D95F0F23A973D900F1F67E /* PodcastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F0E23A973D900F1F67E /* PodcastAPIClient.swift */; };
+		56D95F1223A9873500F1F67E /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F1123A9873500F1F67E /* PodcastViewController.swift */; };
+		56D95F1423A995E200F1F67E /* CustomPodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F1323A995E200F1F67E /* CustomPodcastCell.swift */; };
+		56D95F1B23AAC13F00F1F67E /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F1A23AAC13F00F1F67E /* UIImageView+Extensions.swift */; };
+		56D95F1D23AAC7F600F1F67E /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D95F1C23AAC7F600F1F67E /* PodcastDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +37,6 @@
 		56D95EE123A9631600F1F67E /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D95EE423A9631600F1F67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56D95EE623A9631600F1F67E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56D95EE823A9631600F1F67E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56D95EEB23A9631600F1F67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56D95EED23A9631B00F1F67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D95EF023A9631B00F1F67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		56D95F0923A96A4800F1F67E /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		56D95F0C23A96D0400F1F67E /* Podcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcasts.swift; sourceTree = "<group>"; };
 		56D95F0E23A973D900F1F67E /* PodcastAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAPIClient.swift; sourceTree = "<group>"; };
+		56D95F1123A9873500F1F67E /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		56D95F1323A995E200F1F67E /* CustomPodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPodcastCell.swift; sourceTree = "<group>"; };
+		56D95F1A23AAC13F00F1F67E /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		56D95F1C23AAC7F600F1F67E /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 		56D95EE323A9631600F1F67E /* PodcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				56D95F1923AAC11000F1F67E /* Extensions */,
+				56D95F1523A995EA00F1F67E /* Views */,
 				56D95F1023A97EA000F1F67E /* Controllers */,
 				56D95F0B23A96CF100F1F67E /* Models */,
 				56D95F0623A9673200F1F67E /* Network Services */,
@@ -130,9 +138,26 @@
 		56D95F1023A97EA000F1F67E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				56D95EE823A9631600F1F67E /* ViewController.swift */,
+				56D95F1123A9873500F1F67E /* PodcastViewController.swift */,
+				56D95F1C23AAC7F600F1F67E /* PodcastDetailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56D95F1523A995EA00F1F67E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56D95F1323A995E200F1F67E /* CustomPodcastCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56D95F1923AAC11000F1F67E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56D95F1A23AAC13F00F1F67E /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +263,13 @@
 			files = (
 				56D95F0F23A973D900F1F67E /* PodcastAPIClient.swift in Sources */,
 				56D95F0823A9675600F1F67E /* NetworkHelper.swift in Sources */,
-				56D95EE923A9631600F1F67E /* ViewController.swift in Sources */,
 				56D95F0A23A96A4800F1F67E /* AppError.swift in Sources */,
+				56D95F1B23AAC13F00F1F67E /* UIImageView+Extensions.swift in Sources */,
+				56D95F1423A995E200F1F67E /* CustomPodcastCell.swift in Sources */,
 				56D95EE523A9631600F1F67E /* AppDelegate.swift in Sources */,
 				56D95F0D23A96D0400F1F67E /* Podcasts.swift in Sources */,
+				56D95F1223A9873500F1F67E /* PodcastViewController.swift in Sources */,
+				56D95F1D23AAC7F600F1F67E /* PodcastDetailViewController.swift in Sources */,
 				56D95EE723A9631600F1F67E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AppError: Error, CustomStringConvertible {
+enum AppError: Error {
   case badURL(String)
   case noResponse
   case networkClientError(Error)
@@ -20,7 +20,5 @@ enum AppError: Error, CustomStringConvertible {
     
     
     
-    var description: String {
-        return "AppError: \(self)"
-    }
+    
 }
